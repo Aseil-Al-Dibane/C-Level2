@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CC5D16E-F3B7-4267-9141-6B58203079C3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>C__Console_Level2</RootNamespace>
+    <AssemblyName>C# Console Level2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Aseil</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DVLD_BuisnessLayer">
+      <HintPath>D:\DVLD Project Final\Project\DVLD_BuisnessLayer\bin\Debug\DVLD_BuisnessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C# using for Resource Management\UsingClass.cs" />
+    <Compile Include="Attributes\Conditional Attribute Examples\DebugRelease.cs" />
+    <Compile Include="Attributes\Conditional Attribute Examples\ObsoleteAttribute.cs" />
+    <Compile Include="Attributes\Conditional Attribute Examples\TraceDefine.cs" />
+    <Compile Include="Cryptography\AsymmetricClass.cs" />
+    <Compile Include="Cryptography\Encrypt photo example\PhotoEncryption.cs" />
+    <Compile Include="Cryptography\HashingClass.cs" />
+    <Compile Include="Cryptography\SymmetricClass.cs" />
+    <Compile Include="Func And Action And Predicate Delegates\FuncActionPredicateDelegates.cs" />
+    <Compile Include="Generic Classes\DynamicArray.cs" />
+    <Compile Include="Lambda Expression\LambdaExpression.cs" />
+    <Compile Include="Logger Delegation\DataBase.cs" />
+    <Compile Include="Logger Delegation\MyFile.cs" />
+    <Compile Include="Logger Delegation\Logger.cs" />
+    <Compile Include="Logger Delegation\Screen.cs" />
+    <Compile Include="Multithreading\Multithreading Synchronization\CopyTheCode.cs" />
+    <Compile Include="Multithreading\myThread.cs" />
+    <Compile Include="myEventLog\MyEventLog.cs" />
+    <Compile Include="myRegisrty\MyRegistry.cs" />
+    <Compile Include="New Order Event\EmailService.cs" />
+    <Compile Include="New Order Event\Order.cs" />
+    <Compile Include="New Order Event\OrderEventArgs.cs" />
+    <Compile Include="New Order Event\ShippingService.cs" />
+    <Compile Include="New Order Event\SMSService.cs" />
+    <Compile Include="News Publisher Subscriber Event\NewsPublisher.cs" />
+    <Compile Include="News Publisher Subscriber Event\NewsArticle.cs" />
+    <Compile Include="News Publisher Subscriber Event\NewsSubscriber.cs" />
+    <Compile Include="Nullable Data Types\NullableClass.cs" />
+    <Compile Include="Attributes\Serialization Deserialization\BinarySerialization.cs" />
+    <Compile Include="Attributes\Serialization Deserialization\JSONSerialization.cs" />
+    <Compile Include="Attributes\Serialization Deserialization\XMLSerialization.cs" />
+    <Compile Include="Operator Overloading\Pointer.cs" />
+    <Compile Include="Refliction\Custom Attributes for Validation\Person.cs" />
+    <Compile Include="Refliction\Custom Attributes for Validation\RangeAttribute.cs" />
+    <Compile Include="Refliction\NavigateLibrary.cs" />
+    <Compile Include="Refliction\Reflection Example 2 - Dynamically Create Objects and Invoke Methods\MyClass.cs" />
+    <Compile Include="Refliction\Reflection Example 2 - Dynamically Create Objects and Invoke Methods\myDynamicReflection.cs" />
+    <Compile Include="Refliction\Reflection with Custom Attributes\myClass.cs" />
+    <Compile Include="Refliction\Reflection with Custom Attributes\MyCustomAttribute.cs" />
+    <Compile Include="Refliction\TypeClass.cs" />
+    <Compile Include="Special Comments\Calculator.cs" />
+    <Compile Include="Task Class\CustomEventArgs.cs" />
+    <Compile Include="Task Class\myTask.cs" />
+    <Compile Include="Task Class\myTaskFactory.cs" />
+    <Compile Include="Temperature Change Event\Display.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Temperature Change Event\TemperatureChangedEventArgs.cs" />
+    <Compile Include="Temperature Change Event\Thermostat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
